@@ -1,0 +1,1528 @@
+@font-face {
+    font-family: cooper lg;
+    src:url(./CooperLtBTWXXLight.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cooper lg;
+}
+
+html,body{
+    height: 100%;
+    width:100%;
+}
+
+#main1{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav{
+    background-color: #fff;
+    z-index: 999;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    padding: 0 40px;
+    /* background-color: red; */
+}
+
+#nav #part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav>h1{
+    font-size: 32px;
+    font-weight: 100;
+}
+
+#nav>h1>span{
+    color: springgreen;
+    font-size: 40px;
+}
+
+#nav #part2 a{
+    text-decoration: none;
+    color: black;
+    margin: 20px;
+    font-size: 17px;
+    font-weight: 200;
+    display: flex;
+    justify-content: space-between;
+}
+
+#nav #part2 a:nth-last-child(1){
+    padding: 7px 18px;
+    border-radius: 50px;
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+    width: 160px;
+    height: 40px;
+    align-items: center;
+    font-size: 22px;
+    font-family: 500;
+}
+
+#nav #part2 a:nth-last-child(1) h5 {
+    z-index: 99;
+    font-weight: 100;
+    position: relative;
+}
+#nav #part2 a:nth-last-child(1) i{
+    position: relative;
+    z-index: 999;
+}
+
+#nav #part2 a:nth-last-child(1) #green{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background-color: springgreen;
+    transition: left 0.4s ease;
+}
+
+#nav #part2 a:nth-last-child(1):hover #green{
+    left: 0;
+}
+
+#main>h1{
+    /* left:%; */
+    font-size: 5vw;
+    font-weight: 100;
+    width: 52%;
+    text-align: center;
+    text-transform: capitalize;
+    position: relative;
+    z-index: 99;
+    left: 2%;
+}
+
+#main>h1::after{
+    content:" ";
+    width: 40%;
+    position: absolute;
+    height: 16px;
+    background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
+    bottom: -5%;
+    left: 50%;
+    transform: translate(-50%,0);
+     background-size: cover;
+}
+
+
+
+#main #img1{
+    height: 410px;
+    width: 260px;
+    position: absolute;
+    left: 6%;
+    top: 10%;
+}
+
+#main #img2{
+    height: 220px;
+    width: 260px;
+    position: absolute;
+    right:28%;
+    top: 20%;
+}
+
+#main #img3{
+    height: 205px;
+    width: 210px;
+    position: absolute;
+    right: 4%;
+    bottom: 20%;
+}
+
+#main img{
+    transition: all 0.4s ease;
+}
+
+
+#main #img1:hover{
+     margin-top: -16px;
+}
+#main #img2:hover{
+    top: 18%;
+}
+
+#main #img3:hover{
+    bottom: 16%;
+}
+
+
+#nav #part2 a:hover{
+    border-bottom: 2px solid springgreen;
+}
+
+#find{
+    width: 18vw;
+    display: flex;
+    z-index: 99;
+    position: absolute;
+    top: 72%;
+    left: 40%;
+    justify-content: space-between;
+    font-size: 24px;
+    font-weight: 200;
+    align-items: center;
+}
+
+#find a{
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 50px;
+    text-align: center;
+    z-index: 99;
+    color: black;
+    position: relative;
+    padding: 3px 16px;
+    display: flex;
+    align-items: center;
+}
+
+#cover1{
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: -100%;
+    background-color: springgreen;
+    transition: left 0.4s ease;
+}
+#hahaha{
+    width: 60px;
+    border-radius: 40px;
+    overflow: hidden;
+    position: relative;
+}
+#find:hover #cover1{
+    left: 0;
+}
+#section2{
+    height: 80vh;
+    width: 100%;
+    background-color: black;
+}
+
+#section2>h2{
+     position: relative;
+     display: flex;
+     font-size: 20px;
+     color: #fff;
+    top: 26%;
+    left: 30%;
+    width: 50%;
+    transition: all 0.8s ease;
+}
+
+#section2>h2>span{
+    color: springgreen;
+    bottom: -52%;
+    left: -4%;
+    position: absolute;
+    font-size: 80px;
+}
+#section2>h1{
+    position: relative;
+    display: flex;
+   font-size: 42px;
+   font-family: cooper lg;
+   font-weight: 100;
+   color: #fff;
+   top: 32%;
+   left: 20%;
+   width: 60%;
+   text-align: center;
+   transition: all 0.8s ease;
+}
+
+/* #section2>h1>span{
+    position: relative;
+    left: 0%;
+    top: 20%;
+    font-size: 40px;
+} */
+#section2>h1::after{
+     content: "";
+     position: absolute;
+     width: 25%;
+     height: 46%;
+     top: 61%;
+     /* background-color: rgb(66, 61, 57); */
+     background-image: url(https://thisisdigital.co.uk/dist/images/circle-green.svg);
+     bottom: 0;
+     left: 48%;
+     transform: translate(-50%,0);
+}
+
+#abt{
+    position: absolute;
+    width: 180px;
+    left: 48%;
+    top: 164%;
+    transform: translate(-50%,-50%);
+    justify-content: space-between;
+    display: flex;
+    transition: all 0.8s ease;
+}
+
+#abt>h3{
+    display: inline-block;
+    font-size: 25px;
+    color: #fff;
+}
+
+#abt>a{
+    border-radius: 50px;
+    width: 65px;
+    height: 32px;
+    color: #fff;
+    text-align: center;
+    padding: 6px 3px;
+    border-radius: 50px;
+    border: 1px solid white;
+    text-decoration: none;
+    position: relative;
+    /* z-index: 99; */
+    overflow: hidden;
+}
+
+i{
+    position: relative;
+    z-index:99;
+}
+
+#cover2{
+    height: 100%;
+    width: 100%;
+    background-color: springgreen;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    border-radius: 50px;
+    transition: left 0.4s ease;
+}
+
+#section2 #abt a:hover #cover2{
+    left: 0;
+}
+
+
+#section3{
+    height: 130vh;
+    width: 100%;
+    /* background-color: rgb(103, 12, 12); */
+}
+
+#section3 #img4{
+    height: 400px;
+    width: 140px;
+    position: absolute;
+    left: 0;
+    top: 180;
+    transition: all 0.8s ease;
+}
+
+#section3 #img5{
+    height: 220px;
+    width: 330px;
+    position: absolute;
+    left: 14%;
+    top: 180%;
+    transition: all 0.8s ease;
+}
+
+#section3 #img6{
+    height: 200px;
+    width: 140px;
+    position: absolute;
+    left: 0%;
+    top: 252%;
+    transition: all 0.8s ease;
+}
+#section3 #img7{
+    height: 490px;
+    width: 430px;
+    position: absolute;
+    left: 14%;
+    top: 222%;
+    transition: all 0.8s ease;
+}
+
+#section3>h1{
+    position: relative;
+    left: 55%;
+    top: 10%;
+    width: 40%;
+    font-size: 60px;
+    font-weight: 100;
+    transition: all 0.8s ease;
+}
+
+#section3>h1::after{
+    content: "";
+    position: absolute;
+    background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
+    width: 44%;
+background-size: cover;
+    height: 14px;
+    top: 27%;
+    left: 48%;
+    transform: translate(-50%,0);
+}
+#section3>p{
+    position: relative;
+    left: 55%;
+    top: 15%;
+    width: 40%;
+    font-size: 20px;
+    font-family: 100;
+    letter-spacing: 1px;
+    line-height: 32px;
+    transition: all 0.8s ease;
+}
+
+#boxo{
+    height: 55px;
+    width: 34%;
+    /* background-color: rgb(199, 199, 209); */
+    position: relative;
+   left: 55%;
+   top: 20%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   text-align: center;
+   transition: all 0.8s ease;
+}
+
+#boxo>img{
+    height: 100%;
+    background-color: #DBEAFE;
+    width: 55px;
+    border-radius: 50%;
+}
+
+#boxo>h4{
+    font-size: 22px;
+     font-family: cooper lg;
+     font-weight: 500;
+}
+
+#boxo>a{
+    position: relative;
+    height: 85%;
+    width: 40%;
+    text-align: center;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 100;
+    color:rgb(0, 0, 0);
+    padding: 0 20px;
+    text-decoration: none;
+    border: 1px solid black;
+    /* background-color: blanchedalmond; */
+    display: flex;
+    align-items: center;
+    font-family: cooper lg;
+    font-weight: 100;
+    justify-content: space-between;
+     overflow: hidden;
+}
+a>h6{
+    font-weight: 100;
+    z-index: 99;
+    font-size: 18px;
+    position: relative;
+}
+
+#cover3{
+    height: 100%;
+    border-radius: 50px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background-color: springgreen;
+    transition: left 0.4s ease;
+}
+
+#section3 #boxo a:hover #cover3{
+    left: 0;
+}
+#section4{
+    height: 130vh;
+    width: 100%;
+    background-color: #fff;
+}
+
+#section4>h1{
+    font-size: 50px;
+    width: 70%;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    top: 6%;
+    left:15%;
+    font-weight: 100;
+    transition: left 0.4s ease ;
+    font-family: cooper lg;
+}
+
+#section4>h1::after{
+    content: "";
+    position: absolute;
+    width: 15%;
+    height: 68%;
+    top: -8%;
+    /* background-color: rgb(66, 61, 57); */
+    background-image: url(https://thisisdigital.co.uk/dist/images/circle-green.svg);
+    bottom: 0;
+    left: 22.5%;
+    transform: translate(-50%,0);
+}
+
+#images{
+    position: relative;
+    height: 70%;
+    width: 100%;
+    top: 20%;
+    /* background-color: aquamarine; */
+    display: flex;
+    padding: 0 100px;
+    justify-content: space-between;
+}
+
+#images #grp1{
+    height: 90%;
+    width: 18%;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#grp1-1{
+    height: 30%;
+    width: 100%;
+    /* background-color: brown; */
+}
+
+#grp1-1>img{
+    width: 70%;
+}
+
+#grp1-2{
+    height: 30%;
+    width: 100%;
+    /* background-color: rgb(56, 165, 42); */
+}
+
+#grp1-2>img{
+    width: 70%;
+}
+
+#grp1-3{
+    height: 30%;
+    width: 100%;
+    /* background-color: rgb(77, 42, 165); */
+}
+
+#grp1-3>img{
+    width: 70%;
+}
+
+#images #grp2{
+    height: 90%;
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: rgb(0, 255, 247); */
+}
+
+#grp2-1{
+    height: 30%;
+    width: 100%;
+    /* background-color: brown; */
+}
+
+#grp2-1>img{
+    width: 70%;
+}
+
+#grp2-2{
+    height: 30%;
+    width: 100%;
+    /* background-color: rgb(56, 165, 42); */
+}
+
+#grp2-2>img{
+    width: 70%;
+}
+
+#grp2-3{
+    height: 30%;
+    width: 100%;
+    /* background-color: rgb(77, 42, 165); */
+}
+
+#grp2-3>img{
+    width: 70%;
+}
+
+#images #grp3{
+    height: 100%;
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: rgb(246, 255, 0); */
+}
+
+#grp3-1{
+    height: 30%;
+    width: 100%;
+    /* background-color: brown; */
+}
+
+#grp3-1>img{
+    width: 70%;
+}
+
+#grp3-2{
+    height: 30%;
+    width: 100%;
+    /* background-color: rgb(56, 165, 42); */
+}
+
+#grp3-2>img{
+    width: 70%;
+    margin-top: 20%;
+}
+
+#grp3-3{
+    height: 30%;
+    width: 100%;
+    /* background-color: rgb(77, 42, 165); */
+}
+
+#grp3-3>img{
+    width: 70%;
+    margin-top: 40%;
+}
+
+#grp3-4{
+    height: 30%;
+    width: 100%;
+    /* background-color: aqua; */
+}
+
+#grp3-4>img{
+    width: 80%;
+    margin-top: 30%;
+}
+#images #grp4{
+    height: 90%;
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: rgb(0, 255, 157); */
+}
+
+#grp4-1{
+    height: 30%;
+    width: 100%;
+    /* background-color: brown; */
+}
+
+#grp4-1>img{
+    width: 70%;
+}
+
+#grp4-2{
+    height: 30%;
+    width: 100%;
+    /* background-color: rgb(56, 165, 42); */
+}
+
+#grp4-2>img{
+    width: 70%;
+}
+
+#grp4-3{
+    height: 30%;
+    width: 100%;
+    /* background-color: rgb(77, 42, 165); */
+}
+
+#grp4-3>img{
+    width: 70%;
+}
+
+#images #grp5{
+    height: 90%;
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: rgb(255, 0, 136); */
+}
+
+#grp5-1{
+    height: 30%;
+    width: 100%;
+    /* background-color: brown; */
+}
+
+#grp5-1>img{
+    width: 70%;
+}
+
+#grp5-2{
+    height: 30%;
+    width: 100%;
+    /* background-color: rgb(56, 165, 42); */
+}
+
+#grp5-2>img{
+    width: 70%;
+}
+
+#grp5-3{
+    height: 30%;
+    width: 100%;
+    /* background-color: rgb(77, 42, 165); */
+}
+
+#grp5-3>img{
+    width: 70%;
+}
+
+#section5{
+    height: 120vh;
+    width: 100%;
+    /* background-color: rgb(131, 79, 79); */
+}
+
+#photo{
+    /* background-color: rgb(177, 30, 210); */
+    height: 50%;
+    width: 100%;
+    display: flex;
+    position: relative;
+    top: 22%;
+    justify-content: space-between;
+}
+
+#photo1{
+    height: 100%;
+    width: 40%;
+    left: 8%;
+    position: relative;
+    /* background-color: brown; */
+    background-image: url(https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/work/Golf.jpeg?w=1200&h=900&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1635867985&s=5e7cee6801a656523b56b64a34d04786);
+    background-size: cover;
+}
+
+#photo2{
+    height: 100%;
+    width: 40%;
+    right: 8%;
+    position: relative;
+    /* background-color: chartreuse; */
+    background-size: cover;
+    background-image: url(https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/work/work-thumbnail-03.jpg?w=1200&h=900&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1627573623&s=efbebf8d2134c057c66886c970e18069);
+}
+
+#img10{
+    height: 50px;
+    width: 150px;
+    position: relative;
+    top: 10%;
+    left: 10%;
+    color: #fff;
+}
+
+#photo1>h3{
+    color: #fff;
+    position: relative;
+    top: 28.5%;
+    left: 8%;
+    width: 75%;
+    font-size: 35px;
+    font-weight: 500;
+    font-family: cooper lg;
+}
+
+
+
+#case1{
+    height: 10%;
+    width: 55%;
+    position: relative;
+    top: 32%;
+    left: 8%;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: springgreen; */
+}
+
+#case1>h3{
+    font-size: 25px;
+    color: #fff;
+    font-weight: 500;
+    font-family: cooper lg;
+}
+
+#case1>a{
+    height: 90%;
+    border-radius: 50px;
+    border: 1px solid white;
+    width: 65px;
+    text-decoration: none;
+    color: #fff;
+    right: 0;
+    /* padding: 13px; */
+    text-align: center;
+    padding: 7px;
+    z-index: 99;
+    font-weight: 500;
+    font-family: cooper lg;
+    position: relative;
+    overflow: hidden;
+}
+
+#cover4{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: -100%;
+    border-radius: 50px;
+    position: absolute;
+    background-color: springgreen;
+    transition: left 0.4s ease;
+}
+
+#section5 #photo1 #case1 a:hover #cover4{
+    left: 0;
+}
+
+#img11{
+    height: 50px;
+    width: 150px;
+    position: relative;
+    top: 10%;
+    left: 10%;
+    color: #fff;
+}
+
+#photo2>h3{
+    color: #fff;
+    position: relative;
+    top: 40%;
+    left: 8%;
+    width: 85%;
+    font-size: 35px;
+    font-weight: 500;
+    font-family: cooper lg;
+}
+#case2{
+    height: 10%;
+    width: 55%;
+    position: relative;
+    top: 44%;
+    left: 8%;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: springgreen; */
+}
+
+#case2>h3{
+    font-size: 25px;
+    color: #fff;
+    font-weight: 500;
+    font-family: cooper lg;
+}
+
+#case2>a{
+    height: 90%;
+    border-radius: 50px;
+    border: 1px solid white;
+    width: 65px;
+    text-decoration: none;
+    color: #fff;
+    right: 0;
+    /* padding: 13px; */
+    text-align: center;
+    padding: 7px;
+    z-index: 99;
+    font-weight: 500;
+    position: relative;
+    overflow: hidden;
+}
+
+#cover5{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: -100%;
+    border-radius: 50px;
+    position: absolute;
+    background-color: springgreen;
+    transition: left 0.4s ease;
+}
+
+#section5 #photo2 #case2 a:hover #cover5{
+    left: 0;
+}
+
+
+#boxo1{
+    height: 54px;
+    width: 28%;
+    /* background-color: rgb(199, 199, 209); */
+    position: relative;
+   left: 35%;
+   top: 38%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   text-align: center;
+   /* transition: 0.4s ease; */
+   transition: all 0.8s ease;
+}
+
+#boxo1>img{
+    height: 100%;
+    background-color: #DBEAFE;
+    width: 55px;
+    border-radius: 50%;
+}
+
+#boxo1>h4{
+     font-size: 22px;
+     font-family: cooper lg;
+     font-weight: 500;
+}
+
+#boxo1>a{
+    position: relative;
+    height: 72%;
+    width: 40%;
+    text-align: center;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 100;
+    color:rgb(0, 0, 0);
+    padding: 0 20px;
+    text-decoration: none;
+    border: 1px solid rgba(0, 0, 0, 0.667);
+    /* background-color: blanchedalmond; */
+    display: flex;
+    align-items: center;
+    font-family: cooper lg;
+    font-weight: 100;
+    justify-content: space-between;
+     overflow: hidden;
+}
+a>h6{
+    font-weight: 100;
+    z-index: 99;
+    font-size: 18px;
+    position: relative;
+}
+
+#cover6{
+    height: 100%;
+    border-radius: 50px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background-color: springgreen;
+    transition: left 0.4s ease;
+}
+
+#section5 #boxo1 a:hover #cover6{
+    left: 0;
+}
+/* #service1{
+    height: 6.5%;
+    width: 30%;
+    background-color: aquamarine;
+    top: 35%;
+    left: 35%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    transition: all 0.8s ease;
+}
+
+#service1 #img8{
+    height: 95%;
+    width: 50px;
+    border-radius: 50px;
+    background-color: #DBEAFE;
+}
+
+#service1>a{
+    background-color: brown;
+    height: 88%;
+    width: 180px;
+    padding: 18px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+    color: black;
+    font-weight: 100;
+    font-size:18px;
+    border: 1px solid black;
+    right: 0%;
+    z-index: 99;
+}
+
+#service1>h4{
+    background-color: rgb(87, 42, 165);
+    height: 100%;
+    width: 200px;
+    padding: 14px;
+    align-items: center;
+    text-align: center;
+    color: black;
+    font-weight: 500;
+    font-size:24px;
+} */
+
+/* #cover6{
+    height: 88%;
+    width: 156px;
+    right: 0%;
+    border-radius: 40px;
+    overflow: hidden;
+    background-color: springgreen;
+    position: absolute;
+    transition: left 0.4s ease ;
+    position: absolute;
+} */
+
+
+
+#section7{
+    height: 60vh;
+    width: 100%;
+    /* background-color: blueviolet; */
+}
+#section8{
+    height: 115vh;
+    width: 100%;
+    background-color: rgb(11, 11, 11);
+}
+
+#box{
+    bottom:26%;
+    left: 14%;
+    position: relative;
+    /* display: flex; */
+    height: 56%;
+    width: 70%;
+    background-image: url(https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/This-is-digital-LOW-RES-239.jpg?w=1200&h=394&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1631002673&s=a8225dd79a8eb0d05ce0db6b2a5efd03);
+    background-size: cover;
+    /* filter: brightness(60%); */
+}
+
+
+#box>h2{
+    font-weight: 500;
+    font-size: 30px;
+    position: relative;
+    top: 20%;
+    left: 12%;
+    width: 70%;
+    color: #fff;
+    text-align: center;
+}
+
+#boxo2{
+    height: 52px;
+    width: 50%;
+    /* background-color: rgb(199, 199, 209); */
+    position: relative;
+   left: 27%;
+   top: 38%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   text-align: center;
+   /* transition: 0.4s ease; */
+   transition: all 0.8s ease;
+}
+
+#boxo2>img{
+    height: 100%;
+    background-color: #DBEAFE;
+    width: 55px;
+    border-radius: 50%;
+}
+
+#boxo2>h4{
+    color: #fff;
+     font-size: 25px;
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: 500;
+}
+
+#boxo2>a{
+    position: relative;
+    height: 72%;
+    width: 50%;
+    text-align: center;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 300;
+    color:white;
+    padding: 0 20px;
+    text-decoration: none;
+    border: 1px solid white;
+    /* background-color: blanchedalmond; */
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    justify-content: space-between;
+     overflow: hidden;
+}
+a>h6{
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 99;
+    font-size: 18px;
+    position: relative;
+}
+
+#cover7{
+    height: 100%;
+    border-radius: 50px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background-color: springgreen;
+    transition: left 0.4s ease;
+}
+
+#section8 #boxo2 a:hover #cover7{
+    left: 0;
+}
+
+#last{
+    height: 60vh;
+    width: 100%;
+    position: relative;
+    bottom: 18%;
+    display: flex;
+    /* background-color: rgb(89, 43, 226); */
+    justify-content: space-between;
+    padding: 0 90px;
+}
+
+#g1{
+    height: 80%;
+    width: 25%;
+    /* background-color: brown; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#g1-1{
+    height: 70%;
+    width: 100%;
+    /* background-color: cornflowerblue; */
+}
+
+#g1-1>h1{
+    font-size: 48px;
+    font-weight: 200;
+    color:#fff;
+}
+
+#g1-1>h1::after{
+    content: "";
+    position: absolute;
+    width: 15%;
+    height: 19%;
+    bottom: 67%;
+    /* background-color: rgb(66, 61, 57); */
+    background-image: url(https://thisisdigital.co.uk/dist/images/circle-green.svg);
+    /* bottom: 0; */
+    left: 6%;
+    /* transform: translate(-50%,0);    */
+}
+
+#boxo3{
+    height: 60%;
+    width: 60%;
+    /* background-color: burlywood; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#boxo3>h6{
+    font-size: 22px;
+    color: #fff;
+    font-weight: 600;
+}
+
+#boxo3>a{
+    border-radius: 50px;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid white;
+    width: 65px;
+    height: 30px;
+    text-align: center;
+    padding: 6px;
+    /* background-color: blueviolet; */
+    position: relative;
+    overflow: hidden;
+}
+ #cover8{
+    height: 100%;
+    border-radius: 50px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: -100%;
+    background-color: springgreen;
+    transition: left 0.4s ease;
+}
+
+#section8 #last #g1-2 #boxo3 a:hover #cover8{
+    left: 0;
+} 
+
+#g1-2{
+    height: 24%;
+    width: 100%;
+    /* background-color: cornflowerblue; */
+}
+
+#g2{
+    height: 100%;
+    width: 15%;
+    /* background-color: rgb(89, 42, 165); */
+}
+
+#g2>h3{
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    position: relative;
+    line-height: 60px;
+    margin-left: 40%;
+}
+
+#g2>h6{
+    font-size: 18px;
+    font-weight: 100;
+    position: relative;
+    margin-left: 40%;
+    line-height: 35px;
+    color: rgba(255, 255, 255, 0.815);
+}
+
+#g3{
+    height: 100%;
+    width: 15%;
+    /* background-color: rgb(42, 67, 165); */
+}
+
+#g3>h3{
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    position: relative;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 60px;
+    margin-left: 40%;
+}
+
+#g3>h6{
+    font-size: 18px;
+    font-weight: 100;
+    position: relative;
+    margin-left: 40%;
+    line-height: 35px;
+    color: rgba(255, 255, 255, 0.815);
+}
+
+#g4{
+    height: 100%;
+    width: 18%;
+    /* background-color: rgb(116, 165, 42); */
+}
+
+#g4>h3{
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    position: relative;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 60px;
+    margin-left: 28%;
+}
+
+#g4>h6{
+    font-size: 18px;
+    font-weight: 100;
+    position: relative;
+    margin-left: 28%;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.815);
+}
+
+#g5{
+    height: 100%;
+    width: 22%;
+    /* background-color: rgb(165, 71, 42); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+#g5-1{
+    height: 30%;
+    width: 100%;
+    /* background-color: rgb(126, 129, 135); */
+}
+
+#g5-1>img{
+    height: 60%;
+    width: 45%;
+    margin-left: 25%;
+    margin-top: 10%;
+}
+
+#g5-2{
+    height: 35%;
+    width: 100%;
+    /* background-color: rgb(141, 147, 160); */
+}
+
+#g5-2>img{
+    height: 76%;
+    width: 42%;
+    margin-left: 26%;
+    margin-top: 2%;
+}
+
+#g5-3{
+    height: 30%;
+    width: 100%;
+    /* background-color: rgb(212, 214, 219); */
+}
+
+#g5-3>img{
+    height: 35%;
+    width: 46%;
+    margin-left: 25%;
+}
+
+#lst{
+    height: 16vh;
+    width: 100%;
+    /* background-color: brown; */
+    overflow: hidden;
+    position: relative;
+    bottom: 150px;
+}
+
+hr{
+    width: 85%;
+    position: relative;
+    left:8%;
+    /* color: transparent; */
+    /* border: 1px solid white; */
+}
+
+#lst>h1{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 100;
+    margin-left: 100px;
+    margin-top: 28px;
+}
+
+#lst>h1>span{
+    color: springgreen;
+    font-size: 30px;
+}
+
+#lst>#p1{
+    color: rgba(255, 255, 255, 0.833);
+    font-size: 14px;
+    margin-left:30%;
+    position: relative;
+    bottom: 25px;
+    font-weight: 100;
+}
+
+#lst>#p2{
+    color: rgba(255, 255, 255, 0.833);
+    font-size: 14px;
+    margin-left:67%;
+    position: relative;
+    bottom: 42px;
+    font-weight: 100;
+}
+
+#p2:hover{
+   /* outline: springgreen; */
+   border-bottom: 1px solid springgreen;
+    cursor: pointer;
+    width: 85px;
+}
+
+#lst>#p3{
+    color: rgba(255, 255, 255, 0.833);
+    font-size: 14px;
+    margin-left:76%;
+    position: relative;
+    bottom: 58px;
+    font-weight: 100;
+}
+
+#p3>a{
+    color: rgba(255, 255, 255, 0.833);
+}
+
+#lst #p3 a:hover{
+    color: springgreen;
+    /* outline: springgreen; */
+    cursor: pointer;
+
+}
+
+#lst #i1{
+    color: #fff;
+    position: relative;
+    bottom: 80%;
+    margin-left: 91%;
+    font-size: 20px;
+}
+
+#lst #i2{
+    color: #fff;
+    position: relative;
+    bottom: 104%;
+    margin-left: 94%;
+    font-size: 20px;
+}
+
+#lst #i1:hover{
+    color: springgreen;
+    cursor: pointer;
+}
+
+#lst #i2:hover{
+    color: springgreen;
+    cursor: pointer;
+}
+.swiper {
+    width: 100%;
+    height: 100vh;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .swiper-slide img {
+    display:block;
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+  }
+
+  .swiper-slide h1 {
+   font-size: 4vw;
+   font-family: cooper lg;
+   width: 62%;
+   font-weight: 100;
+   margin: 30px;
+  }
+
+  .swiper-slide h3 {
+    font-size: 1.5vw;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    width: 160px;
+   }
+
+   .swiper-slide h3::before{
+    content: "";
+    background-color: springgreen;
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    left: 0;
+    top: 20%;
+    border-radius: 50px;
+   }
+
+   .swiper-slide h4 {
+    font-size: 1.5vw;
+    font-weight: 500;
+    margin: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0, 0.5);
+   }
+
+
